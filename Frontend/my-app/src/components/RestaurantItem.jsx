@@ -8,12 +8,16 @@ const RestItem = styled.div`
   margin: 1rem;
 `;
 
+const SmallText = styled.small`
+  font-size: small;
+`;
+
 export default class RestaurantItem extends Component {
   render() {
     return (
       <RestItem>
-        <div>{this.props.name}</div>
-        <div>{this.props.address}</div>
+        <p>{this.props.name}</p>
+        <SmallText>{this.props.address}</SmallText>
         <div>
           <img src={this.props.photo_url} width="200" height="150"/>
           <Timing timings={this.props.timings}/>

@@ -2,8 +2,13 @@ import React, {Component} from 'react';
 import RestaurantItem from './RestaurantItem';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
+const Wrapper = styled.div`
+  width: 100%;
+`;
 const List = styled.div`
-  width: 700px;
+  display: table;
+  margin: 0 auto;
+  width: 900px;
 `
 
 export class RestaurantList extends Component {
@@ -68,7 +73,9 @@ export class RestaurantList extends Component {
       })
     };
 
-    return (<List>{renderRestaurants()}</List>)
+    return (<Wrapper>
+      <List>{renderRestaurants()}</List>
+    </Wrapper>)
   }
 
 }
