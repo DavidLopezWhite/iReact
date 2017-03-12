@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 const List = styled.div`
   display: table;
   margin: 0 auto;
-  width: 900px;
+  max-width: 1200px;
 `
 
 export class RestaurantList extends Component {
@@ -62,14 +62,29 @@ export class RestaurantList extends Component {
       }
     }
   ];
+
+    this.state = {selected: '', approved: undefined};
+  }
+
+  onTimeClick(id, key) {
+    if (this.state.approved) return;
+
+    var data = {};
+    data['selected'] = id + key;
+    this.setState(prevState => (data));
+  };
+
+  onReserve() {
+    let id = this.props.id;
+    let timing = this.state.selected.replace(id, "");
+
+    this.setState(prevState => ({approved: true}));
   }
 
   render() {    
     const renderRestaurants = () => {
       return this.listRestaurants.map((restaurant) => {
-        // console.log(restaurant);
-        // return (<div>{restaurant.id}</div>)
-        return (<RestaurantItem key={restaurant.id} {...restaurant}/>);
+        return (<RestaurantItem key={restaurant.id} {...restaurant} selected={this.state.selected} onTimeClick={this.onTimeClick.bind(this)} onReserve={this.onReserve.bind(this)} approved={this.state.approved}/>);
       })
     };
 

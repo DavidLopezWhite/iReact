@@ -10,21 +10,29 @@ const Time = styled.a`
   margin-right: 5px;
   padding: 5px;
 
-  &:hover {
-    background-color: gray;
+  &.active:hover {
+    background-color: orange;
     cursor: pointer;
+  }
+
+  &.disabled {
+    background-color: gray;
+  }
+
+  &.selected {
+    background-color: red;
   }
 `;
 
 const TimeList = styled.div`
-  vertical-align: top;
-  display: inline-block;
   width: 200px;
 `;
 export default class Timing extends Component {
-  onSubmit(e) {
-    e.preventDefault();
+  
+  constructor(props) {
+    super(props);
   }
+
   render() {
     var keys = [];
     for(var k in this.props.timings) keys.push(k);
@@ -33,7 +41,7 @@ export default class Timing extends Component {
       <TimeList>
         {
           keys.map((key) => {
-            return (<Time key={key} className={this.props.timings[key] ? 'active' : 'disabled'}>{key}</Time>)
+            return (<Time onClick={() => this.props.onTimeClick(key)} key={key} className={this.props.timings[key] ? (this.props.selected === this.props.id + key ? 'selected' : 'active') : 'disabled'}>{key}</Time>)
           })
         }
       </TimeList>
