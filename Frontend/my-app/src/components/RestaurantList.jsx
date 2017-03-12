@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import RestaurantItem from './RestaurantItem';
+import SearchResultText from './SearchResultText';
+import LocationPin from './LocationPin';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
+
 const Wrapper = styled.div`
   width: 100%;
 `;
@@ -64,7 +67,7 @@ export class RestaurantList extends Component {
   ];
   }
 
-  render() {    
+  render() {
     const renderRestaurants = () => {
       return this.listRestaurants.map((restaurant) => {
         // console.log(restaurant);
@@ -73,12 +76,27 @@ export class RestaurantList extends Component {
       })
     };
 
-    return (<Wrapper>
-      <List>{renderRestaurants()}</List>
-    </Wrapper>)
+    return (
+        <Wrapper>
+            <Header>
+                <SearchResultText amount='7' address="San Francisco, CA 94105"/>
+                <LocationPin address="San Francisco, CA 94105"/>
+            </Header>
+            <List>{renderRestaurants()}</List>
+        </Wrapper>
+    )
   }
 
 }
+
+
+const Header = styled.div `
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`;
+
 
 export default connect(
     (state) => {
