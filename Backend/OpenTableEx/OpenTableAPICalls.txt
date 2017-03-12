@@ -1,0 +1,19 @@
+OpenTable API calls
+
+Token: 27037c67-f394-4cfd-ab51-069ac71132fb
+
+Key Parameters: 
+Location (city, zip code, etc) return a list of restaurants
+by restaurant id
+enter time and number of people
+Time (users choosing)
+# of people (users choice)
+
+if available confirm
+else select another choice 
+
+# Avaliablities
+curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" 'https://platform.otqa.com/availability?latitude=37.774929&longitude=-122.419416&party_size=2&radius=200&forward_minutes=180&backward_minutes=30&start_date_time=2017-03-17T20%3A00&include_unavailable=false'
+
+# Restaurant listing
+curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" 'https://platform.otqa.com/sync/listings/349486'
