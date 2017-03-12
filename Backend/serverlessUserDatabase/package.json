@@ -1,0 +1,7 @@
+{
+  "name": "splitbill-serverless",
+  "dependencies": {
+    "aws-sdk": "^2.27.0",
+    "uuid": "^3.0.1"
+  }
+}
