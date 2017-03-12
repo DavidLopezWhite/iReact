@@ -28,7 +28,10 @@ export class Header extends Component {
             if (true) {
                 return (
                     <Ava>
-                        <FontAwesome name='rocket' size='2x' spin style={{ color: '#000000' }}/>
+                        <FontAwesome name='user' size='2x' spin style={{ color: '#000000' }}/>
+                        <Notif>
+                            1
+                        </Notif>
                     </Ava>
                 )
             }
@@ -88,9 +91,37 @@ const Login = styled.div`
 
 const LoginLink = styled.a`
     display: block;
+    color: #4a4a4a;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+    }
 `;
 
 const Ava = styled.div`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #9d9d9d;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    position: relative;
+`;
+
+const Notif = styled.div`
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    border: 1px solid #9d9d9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
 `;
