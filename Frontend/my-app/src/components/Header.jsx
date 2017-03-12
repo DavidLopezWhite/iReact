@@ -124,8 +124,3 @@ const Notif = styled.div`
     justify-content: center;
     font-size: 0.75rem;
 `;
-
-const Ava = styled.div`
-    display: flex;
-    flex-direction: row;
-`;
