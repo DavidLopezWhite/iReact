@@ -2,12 +2,18 @@ import React from 'react';
 import {Router, Route, hashHistory, IndexRoute} from 'react-router';
 
 import App from '../components/App';
-import Form from '../components/Form';
+import Home from '../components/Home';
+import Search from '../components/Search';
+import Create from '../components/Create';
+import Status from '../components/Status';
 
 export default (
     <Router history={hashHistory}>
         <Route path="/" component={App}>
-            <IndexRoute component={Form}/>
+            <IndexRoute component={Home}/>
+            <Route path="search" component={Search}/>
+            <Route path="create" component={Create}/>
+            <Route path="status" component={Status}/>
         </Route>
     </Router>
 );
