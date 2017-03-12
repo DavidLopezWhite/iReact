@@ -1,11 +1,12 @@
 import React from 'react';
+import Navigation from './Navigation';
 
 const App = (props) => {
     return (
-        <div>
-            123
-            {props.children}
-        </div>
+      <div>
+        <Navigation/>
+        {props.children}
+      </div>
     );
 }
 export default App;

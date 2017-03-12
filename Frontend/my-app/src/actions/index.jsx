@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
+import restaurantAPI from '../api/Restaurant';
 
-import router from './router';
+export const listRestaurants = (restaurants) => {
+  return {
+    type: 'LIST_RESTAURANTS',
+    restaurants
+  }
+}
 
-const store = require('./store/configureStore').configure();
-
-ReactDOM.render(
-    <Provider store={store}>
-        {router}
-    </Provider>,
-    document.getElementById('root')
-);
+export const onStartSearch = (searchTerm) => {
+  return (dispatch, getState) => {
+    // To be changed back for PROMISES to work
+    // return restaurantAPI.getRestaurants(searchTerm)
+      // .then((restaurants) => {
+        // console.log(restaurants);
+        // dispatch(listRestaurants([{name: 'restaurant'}]));
+      // });
+    return dispatch(listRestaurants(restaurantAPI.getRestaurants(searchTerm)));
+  }
+}
