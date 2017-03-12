@@ -1,0 +1,404 @@
+{
+  "availabilities": [
+    {
+      "rid": 43429,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=43429&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=365703324&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=43429&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1670788290&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=43429&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=679780999&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=43429&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=3081418832&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=43429&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=1401861899&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/43429"
+    },
+    {
+      "rid": 69946,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=69946&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=3502392578&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=69946&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=2940769910&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=69946&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=4151623425&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=69946&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=2199927447&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=69946&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=2124920417&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/69946"
+    },
+    {
+      "rid": 47740,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=47740&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=3993231510&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=47740&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1486182713&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=47740&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=4289765028&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=47740&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=2192118079&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=47740&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=3691777261&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/47740"
+    },
+    {
+      "rid": 105052,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=105052&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=873907400&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=105052&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1081207988&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=105052&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=3283178107&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=105052&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=899875359&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=105052&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=1642482715&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/105052"
+    },
+    {
+      "rid": 82732,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=82732&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=2144425650&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=82732&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=2618310810&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=82732&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=2471521140&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=82732&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=3573019575&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=82732&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=773789777&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/82732"
+    },
+    {
+      "rid": 51103,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=51103&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=1994192977&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=51103&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=3173051208&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=51103&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=1206521571&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=51103&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=4102938468&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=51103&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=3862005323&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/51103"
+    },
+    {
+      "rid": 74083,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=74083&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=3906363009&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=74083&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1455575751&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=74083&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=55768175&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=74083&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=750370135&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=74083&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=1680897131&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/74083"
+    },
+    {
+      "rid": 67858,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=67858&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=2469540786&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=67858&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1187507613&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=67858&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=777298227&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=67858&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=258868198&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=67858&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=1798576493&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/67858"
+    },
+    {
+      "rid": 102160,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=102160&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=779026066&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=102160&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1241953002&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=102160&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=1313344317&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=102160&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=2954039276&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=102160&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=1470582706&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/102160"
+    },
+    {
+      "rid": 66325,
+      "party_size": 2,
+      "times": [
+        "2017-03-17T17:30",
+        "2017-03-17T17:45",
+        "2017-03-17T18:00",
+        "2017-03-17T18:15",
+        "2017-03-17T18:30"
+      ],
+      "times_available": [
+        {
+          "time": "2017-03-17T17:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=66325&d=2017-03-17T17%3A30&sd=2017-03-17T17%3A30&p=2&pt=100&hash=1047135300&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T17:45",
+          "booking_url": "https://www.opentable.com/book/validate?rid=66325&d=2017-03-17T17%3A45&sd=2017-03-17T17%3A45&p=2&pt=100&hash=1006599662&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:00",
+          "booking_url": "https://www.opentable.com/book/validate?rid=66325&d=2017-03-17T18%3A00&sd=2017-03-17T18%3A00&p=2&pt=100&hash=3150187933&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:15",
+          "booking_url": "https://www.opentable.com/book/validate?rid=66325&d=2017-03-17T18%3A15&sd=2017-03-17T18%3A15&p=2&pt=100&hash=253211879&ref=",
+          "credit_card_required": false
+        },
+        {
+          "time": "2017-03-17T18:30",
+          "booking_url": "https://www.opentable.com/book/validate?rid=66325&d=2017-03-17T18%3A30&sd=2017-03-17T18%3A30&p=2&pt=100&hash=4235796005&ref=",
+          "credit_card_required": false
+        }
+      ],
+      "no_availability_reasons": [],
+      "href": "https://platform.otqa.com/sync/listings/66325"
+    }
+  ]
+}

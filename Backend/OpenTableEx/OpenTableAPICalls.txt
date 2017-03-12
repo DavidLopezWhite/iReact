@@ -3,17 +3,21 @@ OpenTable API calls
 Token: 27037c67-f394-4cfd-ab51-069ac71132fb
 
 Key Parameters: 
-Location (city, zip code, etc) return a list of restaurants
-by restaurant id
-enter time and number of people
-Time (users choosing)
-# of people (users choice)
+Location (city, zip code, etc) - Get latitude and longitude radius
+date/time - start_date_time
+# of people - party_size
 
-if available confirm
-else select another choice 
+curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" "https://platform.otqa.com/availability/334879?start_date_time=2017-03-29T18%3A00&party_size=2&forward_minutes=120&backward_minutes=30"
 
-# Avaliablities
-curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" 'https://platform.otqa.com/availability?latitude=37.774929&longitude=-122.419416&party_size=2&radius=200&forward_minutes=180&backward_minutes=30&start_date_time=2017-03-17T20%3A00&include_unavailable=false'
+
+# Avaliablities API
+curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" 'https://platform.otqa.com/availability?latitude=37.774929&longitude=-122.419416&party_size=2&radius=200&forward_minutes=30&backward_minutes=30&start_date_time=2017-03-17T18%3A00&include_unavailable=false' | jq .
 
 # Restaurant listing
-curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" 'https://platform.otqa.com/sync/listings/349486'
+curl -X GET -H "Content-Type:application/json" -H "Authorization:bearer 27037c67-f394-4cfd-ab51-069ac71132fb" 'https://platform.otqa.com/sync/listings/2' | jq .
+
+1. Run Availabilities API call and store result into a list
+2. Go through the list and run Restaurant listing call from list
+3. Store name of Restaurant in list
+4. Return list of restaurant
+5. Once user selects restaurant, send out choice to everyone in group
