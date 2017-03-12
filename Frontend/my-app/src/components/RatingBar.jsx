@@ -1,35 +1,21 @@
 import React, {Component} from 'react';
-import { bindActionCreators } from 'redux'
-import {connect} from 'react-redux';
-import * as actions from '../actions';
 
-export class RatingBar extends Component {
-  constructor(props) {
-    super(props);
-    let buff = this.state.stars;
-    this.state = {stars: []};
-    while (buff-- >= 1 && this.state.stars);
-    if (buff == 0.5 && this.state.stars);
-    for (var i = 0; i < 5 - this.state.stars.length; i++) this.state.stars.push('star-outline');
-  }
+export default class RatingBar extends Component {
   render() {
     // star, star-half, star-outline
+    let buff = this.props.stars + 1; 
+    let stars = [];
+    while (--buff >= 1) stars.push('fa fa-star');
+    if (buff == 0.5) stars.push('fa fa-star-half-o');
+    for (var i = stars.length; i < 5; i++) stars.push('fa fa-star-o');
     return (
         <ul>
         {
-          // this.state.stars.map((star) => {
-          //   return (<i className="material-icons">{star}</i>);
-          // }) }
+          stars.map((star) => {
+            return (<i className={star}></i>);
+          })
         }
         </ul>
     )
   }
 }
-
-function mapStateToProps(state) {
-  return {
-    searchTerm: state.searchTerm
-  }
-}
-
-export default connect(mapStateToProps)(RatingBar);

@@ -1,29 +1,31 @@
 import React, {Component} from 'react';
-import { bindActionCreators } from 'redux'
-import {connect} from 'react-redux';
-import * as actions from '../actions';
+import styled from 'styled-components';
 
-export class Timing extends Component {
+const Time = styled.button`
+  display: inline-block;
+`;
+
+const TimeList = styled.div`
+  vertical-align: top;
+  display: inline-block;
+  width: 180px;
+`;
+export default class Timing extends Component {
   onSubmit(e) {
     e.preventDefault();
   }
   render() {
+    var keys = [];
+    for(var k in this.props.timings) keys.push(k);
+
     return (
-      <div>
+      <TimeList>
         {
-          this.props.timings.map((timing) => {
-            return (<div>{timing}</div>);
+          keys.map((key) => {
+            return (<Time className={this.props.timings[key] ? 'active' : 'disabled'}>{key}</Time>)
           })
         }
-      </div>
+      </TimeList>
     )
   }
 }
-
-function mapStateToProps(state) {
-  return {
-    searchTerm: state.searchTerm
-  }
-}
-
-export default connect(mapStateToProps)(Timing);
