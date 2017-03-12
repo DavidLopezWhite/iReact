@@ -1,0 +1,59 @@
+service: splitbill
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-west-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:us-west-1:*:*"
+
+functions:
+  create:
+    handler: create.create
+    events:
+      - http:
+          path: users
+          method: post
+          cors: true
+  list:
+    handler: list.list
+    events:
+      - http:
+          path: users
+          method: get
+          cors: true
+  get:
+    handler: get.get
+    events:
+      - http:
+          path: users/{id}
+          method: get
+          cors: true
+
+resources:
+  Resources:
+    UsersDynamoDbTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Retain
+      Properties:
+        AttributeDefinitions:
+          -
+            AttributeName: id
+            AttributeType: S
+        KeySchema:
+          -
+            AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: 'users'
