@@ -56,7 +56,6 @@ export class Header extends Component {
 
 export default Header;
 
-
 const Wrap  = styled.div`
     background: #f5f5f5;
     border-bottom: 1px solid #979797;
@@ -124,4 +123,9 @@ const Notif = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
+`;
+
+const Ava = styled.div`
+    display: flex;
+    flex-direction: row;
 `;
