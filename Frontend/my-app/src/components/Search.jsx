@@ -3,21 +3,15 @@ import {connect} from 'react-redux';
 import SearchBar from './SearchBar';
 import RestaurantList from './RestaurantList';
 
-import styled from 'styled-components';
 
 export default class Search extends Component {
 
   render() {
     return (
-      <Wrap>
+      <div>
           <SearchBar/>
           <RestaurantList/>
-      </Wrap>
+      </div>
     )
   }
 }
-
-const Wrap = styled.div`
-    max-width 900px;
-    padding: 0 3%;
-`;
