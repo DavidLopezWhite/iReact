@@ -20,3 +20,30 @@ module.exports.shabadoobie = (event, context, callback) => {
   };
   callback(null, response);
 };
+
+module.exports.allevents = (event, context, callback) => {
+  try{
+    var mongoose = require('mongoose');
+    mongoose.connect('mongodb://irec:pass@ds129090.mlab.com:29090/ireact');
+    var eventSchema = mongoose.Schema({
+      restaurant: String,
+      organizer: String
+    });
+    var Stuff = mongoose.model('Events', eventSchema);
+    var items = ''
+    var queryResults = Stuff.find({}, function (err, events) {
+      if (err) return console.error(err);
+      items = events;
+    }).then( () => {
+    const response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        payload: items
+      })
+    };
+    callback(null, response);
+    })
+  } catch (e){
+    callback(null, { statusCode: 400, body: JSON.stringify(e.message) });
+  }
+};

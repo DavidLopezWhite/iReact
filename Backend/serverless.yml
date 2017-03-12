@@ -6,6 +6,9 @@ provider:
   name: aws
   runtime: nodejs4.3
 
+plugins:
+  - serverless-webpack
+
 functions:
   currentTime:
     handler: handler.endpoint
@@ -18,4 +21,10 @@ functions:
     events:
       - http:
           path: free
+          method: get
+  getall:
+    handler: handler.allevents
+    events:
+      - http:
+          path: getall
           method: get
