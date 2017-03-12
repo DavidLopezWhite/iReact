@@ -32,7 +32,6 @@ export class Header extends Component {
             }
         }
         return (
-            <WrapAll>
             <Wrap>
                 <Logo>
                     <Link to="/">
@@ -44,7 +43,6 @@ export class Header extends Component {
                     {renderAva()}
                 </Login>
             </Wrap>
-            </WrapAll>
         )
     }
 }
@@ -64,6 +62,8 @@ const Wrap  = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: #f5f5f5;
+    border-bottom: 1px solid #979797;
 `;
 
 const Logo  = styled.div`
