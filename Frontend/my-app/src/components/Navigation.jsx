@@ -6,8 +6,8 @@ export default class Navigation extends Component {
   render() {
     return (
       <nav>
-        <IndexLink to="/" activeClassName="is-active">Home</IndexLink>
-        <Link to="/create" activeClassName="is-active">Create Reservation</Link>
+        <IndexLink to="/" activeClassName="is-active">splitbill</IndexLink>
+        <Link to="/signin" activeClassName="is-active">Sign In</Link>
       </nav>
     )
   }

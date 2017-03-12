@@ -12,14 +12,8 @@ export class SearchBar extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.onSubmit.bind(this)}>
-        <input type="text" name="city" placeholder="enter city or address" ref={input => this.searchTerm = input}/>
-        <input type="text" name="number" placeholder="number in party" ref={input => this.number = input}/>
-        <button type="submit">Find a table</button>
-
-        <div>...Finding restaurants in your area</div>
-        <div>Loader</div>
-      </form>
+      <div>Search Results for {numOfGuests} guests in {address}</div>
+      
     )
   }
 }

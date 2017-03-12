@@ -10,11 +10,11 @@ export const listRestaurants = (restaurants) => {
 export const onStartSearch = (searchTerm) => {
   return (dispatch, getState) => {
     // To be changed back for PROMISES to work
-    // return restaurantAPI.getRestaurants(searchTerm)
-      // .then((restaurants) => {
-        // console.log(restaurants);
-        // dispatch(listRestaurants([{name: 'restaurant'}]));
-      // });
-    return dispatch(listRestaurants(restaurantAPI.getRestaurants(searchTerm)));
+    return restaurantAPI.getRestaurants(searchTerm)
+      .then((res) => {
+        console.log(res.data.restaurants);
+        dispatch(listRestaurants(res.data.restaurants));
+      });
+    // return dispatch(listRestaurants(restaurantAPI.getRestaurants(searchTerm)));
   }
 }
