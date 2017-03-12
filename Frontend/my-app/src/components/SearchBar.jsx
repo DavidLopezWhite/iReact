@@ -5,20 +5,6 @@ import * as actions from '../actions';
 import { Field, reduxForm } from 'redux-form';
 import styled from 'styled-components';
 
-const Input = styled.input`
-  font-size: 1.25em;
-  padding: 0.5em;
-  margin: 0.5em;
-  color: palevioletred;
-  border: 1px solid black;
-  border-radius: 3px;
-
-  &:focus {
-    border: none;
-    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
-  }
-`;
-
 export class SearchBar extends Component {
 
   handleSubmit(e) {
@@ -30,23 +16,39 @@ export class SearchBar extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
+      <Form onSubmit={this.handleSubmit.bind(this)}>
         <h1>START YOUR RESERVATION</h1>
         <field>
-          <Input type="text" name="city" placeholder="enter city or address" ref={input => this.searchTerm = input}/>
+          <input type="text" name="city" placeholder="enter city or address" ref={input => this.searchTerm = input}/>
         </field>
 
         <field>
-          <Input type="text" name="number" placeholder="number in party" ref={input => this.number = input}/>
+          <input type="text" name="number" placeholder="number in party" ref={input => this.number = input}/>
         </field>
 
         <button type="submit">Find a Table</button>
 
         <div>Loading...</div>
-      </form>
+      </Form>
     )
   }
 }
+
+const Form = styled.form`
+    input {
+        font-size: 1.25em;
+        padding: 0.5em;
+        margin: 0.5em;
+        color: palevioletred;
+        border: 1px solid black;
+        border-radius: 3px;
+
+        &:focus {
+          border: none;
+          box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+        }
+    }
+`;
 
 function mapStateToProps(state) {
   return {

@@ -64,7 +64,6 @@ const Wrap  = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 `;
 
 const Logo  = styled.div`
