@@ -1,13 +1,14 @@
 import React from 'react';
-import Navigation from './Navigation';
 import Helmet from 'react-helmet';
 
-
+import Navigation from './Navigation';
+import Header from './Header';
 
 const App = (props) => {
     return (
       <div>
-        <Helmet 
+        <Header/>
+        <Helmet
           title="This is me!"
           link={[
               { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
