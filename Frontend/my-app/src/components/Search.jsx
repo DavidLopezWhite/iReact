@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import SearchBar from './SearchBar';
 import RestaurantList from './RestaurantList';
 
+
 export default class Search extends Component {
 
   render() {

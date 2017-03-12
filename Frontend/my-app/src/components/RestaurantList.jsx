@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import RestaurantItem from './RestaurantItem';
+import SearchResultText from './SearchResultText';
+import LocationPin from './LocationPin';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
+
 const Wrapper = styled.div`
   width: 100%;
 `;
 const List = styled.div`
   display: table;
   margin: 0 auto;
-  width: 900px;
+  max-width: 1200px;
 `
 
 export class RestaurantList extends Component {
@@ -62,23 +65,53 @@ export class RestaurantList extends Component {
       }
     }
   ];
+
+    this.state = {selected: '', approved: undefined};
   }
 
-  render() {    
+  onTimeClick(id, key) {
+    if (this.state.approved) return;
+
+    var data = {};
+    data['selected'] = id + key;
+    this.setState(prevState => (data));
+  };
+
+  onReserve() {
+    let id = this.props.id;
+    let timing = this.state.selected.replace(id, "");
+
+    this.setState(prevState => ({approved: true}));
+  }
+
+  render() {
     const renderRestaurants = () => {
       return this.listRestaurants.map((restaurant) => {
-        // console.log(restaurant);
-        // return (<div>{restaurant.id}</div>)
-        return (<RestaurantItem key={restaurant.id} {...restaurant}/>);
+        return (<RestaurantItem key={restaurant.id} {...restaurant} selected={this.state.selected} onTimeClick={this.onTimeClick.bind(this)} onReserve={this.onReserve.bind(this)} approved={this.state.approved}/>);
       })
     };
 
-    return (<Wrapper>
-      <List>{renderRestaurants()}</List>
-    </Wrapper>)
+    return (
+        <Wrapper>
+            <Header>
+                <SearchResultText amount='7' address="San Francisco, CA 94105"/>
+                <LocationPin address="San Francisco, CA 94105"/>
+            </Header>
+            <List>{renderRestaurants()}</List>
+        </Wrapper>
+    )
   }
 
 }
+
+
+const Header = styled.div `
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`;
+
 
 export default connect(
     (state) => {
