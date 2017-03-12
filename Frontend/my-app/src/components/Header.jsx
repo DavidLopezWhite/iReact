@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
 import logo from '../logo.png';
 
+
+
 export class Header extends Component {
     render() {
         const renderLogin = () => {
@@ -32,44 +34,43 @@ export class Header extends Component {
             }
         }
         return (
-            <WrapAll>
             <Wrap>
-                <Logo>
-                    <Link to="/">
-                        <img src={logo} alt="Logo" />
-                    </Link>
-                </Logo>
-                <Login>
-                    {renderLogin()}
-                    {renderAva()}
-                </Login>
+                <Container>
+                    <Logo>
+                        <Link to="/">
+                            <img src={logo} alt="Logo" />
+                        </Link>
+                    </Logo>
+                    <Login>
+                        {renderLogin()}
+                        {renderAva()}
+                    </Login>
+                </Container>
             </Wrap>
-            </WrapAll>
         )
     }
 }
 
 export default Header;
 
-const WrapAll  = styled.div`
-    width:100%;
+
+const Wrap  = styled.div`
     background: #f5f5f5;
     border-bottom: 1px solid #979797;
 `;
 
-const Wrap  = styled.div`
-    max-width: 900px;
+const Container  = styled.div`
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 `;
 
 const Logo  = styled.div`
-    width: 171px;
-    height: 50px;
+    width: 179px;
+    height: 82px;
     img {
         width: 100%;
         height: auto;
