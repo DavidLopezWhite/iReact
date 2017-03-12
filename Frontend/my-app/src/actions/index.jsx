@@ -12,8 +12,9 @@ export const onStartSearch = (searchTerm) => {
     // To be changed back for PROMISES to work
     return restaurantAPI.getRestaurants(searchTerm)
       .then((res) => {
-        console.log(res.data.restaurants);
-        dispatch(listRestaurants(res.data.restaurants));
+          debugger;
+        dispatch(restaurantAPI.getRestaurants(res.data.restaurants));
+        window.location = '/search';
       });
     // return dispatch(listRestaurants(restaurantAPI.getRestaurants(searchTerm)));
   }

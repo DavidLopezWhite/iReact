@@ -59,6 +59,7 @@ export default Header;
 const Wrap  = styled.div`
     background: #f5f5f5;
     border-bottom: 1px solid #979797;
+    margin-bottom: 20px;
 `;
 
 const Container  = styled.div`

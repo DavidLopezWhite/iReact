@@ -1,55 +1,19 @@
 import axios from 'axios';
-var MockAdapter = require('axios-mock-adapter');
 
-// This sets the mock adapter on the default instance
-var mock = new MockAdapter(axios);
 
-// Mock any GET request to /users
-// arguments for reply are (status, data, headers)
-
-mock.onGet('/api/search', { params: { searchTerm: 'SF' } }).reply(200, {
-  restaurants: [
-    {
-      id: 'rest1',
-      name: 'Restaurant 1',
-      timings: [{
-        '5.00pm': true,
-        '5.30pm': false,
-        '6.00pm': true,
-        '6.30pm': false,
-        '7.00pm': true,
-        '7.30pm': false,
-      }]
-
-    },
-    {
-      id: 'rest2',
-      name: 'Restaurant 2',
-      timings: [{
-        '5.00pm': true,
-        '5.30pm': true,
-        '6.00pm': true,
-        '6.30pm': false,
-        '7.00pm': false,
-        '7.30pm': false,
-      }]
-    }
-  ]
-});
-
-// getRestaurants - fetch a list of restaurants
-// reserveTiming - Reserve the restaurant timing 
-// getMenu - Get the menu of the restaurant
 module.exports = {
   getRestaurants(searchTerm) {
-    return axios.get('/api/search', {params: {searchTerm}});
+    return axios.get(`https://65i1ix2dr5.execute-api.us-east-1.amazonaws.com/dev/api/search/${searchTerm}`, {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Expose-Headers': 'Access-Control-*',
+        'Access-Control-Allow-Headers': 'Access-Control-*, Origin, X-Requested-With, Content-Type, Accept'
+      }
+    });
   },
 
   reserveTiming(restaurantId, timing, body){
-    return [{
-      success: true,
-      uuid: 'thisismyorganiserid'
-    }];
+    return axios.post(`/api/search/${restaurantId}`);
   },
 
   getReservation(uuid) {
@@ -81,6 +45,3 @@ module.exports = {
     ];
   }
 }
-
-
- 
