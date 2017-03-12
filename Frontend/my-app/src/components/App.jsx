@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+
+import Navigation from './Navigation';
 import Header from './Header';
 
 const App = (props) => {
