@@ -6,6 +6,8 @@ import router from './router';
 
 const store = require('./store/configureStore').configure();
 
+import 'reset-css';
+
 ReactDOM.render(
     <Provider store={store}>
         {router}

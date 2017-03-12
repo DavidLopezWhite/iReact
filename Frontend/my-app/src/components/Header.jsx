@@ -49,8 +49,14 @@ export class Header extends Component {
 
 export default Header;
 
+const WrapAll  = styled.div`
+    width:100%;
+    background: #f5f5f5;
+    border-bottom: 1px solid #979797;
+`;
+
 const Wrap  = styled.div`
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 10px 3%;
     display: flex;
