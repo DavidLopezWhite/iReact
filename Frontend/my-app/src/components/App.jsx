@@ -11,10 +11,9 @@ const App = (props) => {
         <Helmet
           title="This is me!"
           link={[
-              { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+              { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}
             ]}
           />
-        <Navigation/>
         {props.children}
       </div>
     );

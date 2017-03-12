@@ -10,7 +10,7 @@ export default class Create extends Component {
       <div>
           Reservation Information
           <form>
-            
+            <input type="text"/>
           </form>
       </div>
     )
