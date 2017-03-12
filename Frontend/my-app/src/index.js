@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import {Provider} from 'react-redux';
+
+import router from './router';
+
+const store = require('./store/configureStore').configure();
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <Provider store={store}>
+        {router}
+    </Provider>,
+    document.getElementById('root')
 );
