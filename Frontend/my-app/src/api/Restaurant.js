@@ -42,7 +42,15 @@ mock.onGet('/api/search', { params: { searchTerm: 'SF' } }).reply(200, {
 // getMenu - Get the menu of the restaurant
 module.exports = {
   getRestaurants(searchTerm) {
-    return axios.get('/api/search', {params: {searchTerm}});
+    const config = {
+      method: 'get',
+      url: `http://localhost:3002/dev/api/search/${searchTerm}`,
+      headers: {'X-Requested-With': 'XMLHttpRequest'},
+      responseType: 'json',
+      withCredentials: true,
+    }
+
+    return axios.request(config);
   },
 
   reserveTiming(restaurantId, timing, body){
