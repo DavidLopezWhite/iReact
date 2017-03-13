@@ -1,7 +1,8 @@
+
 {
-  "name": "aws-serve-simple-http-endpoint",
+  "name": "aws-rest-with-dynamodb",
   "version": "1.0.0",
-  "description": "Example demonstrates how to setup a simple HTTP GET endpoint",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
   "author": "",
   "license": "MIT"
 }
